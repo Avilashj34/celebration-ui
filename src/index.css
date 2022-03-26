@@ -79,6 +79,24 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.footer-padding{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.service-animation{
+  animation: serviceanimationmove 5s infinite;
+}
+
+#id1 {animation-timing-function: linear;}
+#id2 {animation-timing-function: ease;}
+#id3 {animation-timing-function: ease-in;}
+
+@keyframes serviceanimationmove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
