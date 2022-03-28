@@ -97,6 +97,9 @@ body {
   to {left: 300px;}
 }
 
+.service-font{
+  font-family: "Dream Orphans";
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
