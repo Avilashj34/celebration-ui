@@ -2,16 +2,16 @@
 const Footer = () => {
     return (
         <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
-            <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
-                <p className="text-white"> Categories Available</p>
+            <p className="text-white"> Categories Available</p>
+            <div className="w-full flex sm:flex-row flex-row justify-between items-center my-4">
                 <div className="flex flex-wrap justify-center items-center m-4">
                     {["Candles", "Popper", "Ballons", "Tiara/Crown", "Cap", "Ribbons", "Sprays", "Curtain/Banner", "Stickers", "Notebook", "Paper", "Pencil", "Pen", "StickyNotes", "Markers", "Highlighter", "Stapler", "Punch", "Glue"].map((index, item) => (
                         <p className="text-white text-base text-center mx-2 cursor-pointer">{index}</p>
                     ))}
                 </div>
                 <br />
-                <p className="text-white">Want something else? Ping us</p>
             </div>
+            <p className="text-white">Want something else? Ping us</p>
 
             <div className="flex justify-center items-center flex-col mt-5">
                 <p className="text-white text-sm text-center">Order from us and get the huge discount & free gift</p>
