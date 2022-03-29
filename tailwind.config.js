@@ -27,6 +27,7 @@ module.exports = {
         "slide-in": "slide-in 0.5s ease-out",
         'spin-slow': 'spin 5s linear infinite',
         'ping-slow': 'ping 5s cubic-bezier(1, 1, 0.2, 1) infinite',
+        "fade": '1.5s'
       },
     },
   },

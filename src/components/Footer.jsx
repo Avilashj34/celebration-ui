@@ -25,7 +25,9 @@ const Footer = () => {
             <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
 
             <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
-                <p className="text-white text-left text-xs">@kryptomastery2022</p>
+                <a href="https://www.instagram.com/celebrations_and_stationery/" >
+                    <p className="text-white text-left text-xs">@celebrations_and_stationery</p>
+                </a>
                 <p className="text-white text-right text-xs">All rights reserved</p>
             </div>
         </div>
