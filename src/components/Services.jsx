@@ -35,7 +35,7 @@ const Service = () => (
                 <button
                     type="button"
                     onClick={() => { console.log("Connect Wallet") }}
-                    className="flex flex-row justify-center items-center m-5  bg-[#24c555] p-4 rounded-full cursor-pointer hover:bg-[#0bee4f]"
+                    className="flex flex-row justify-center items-center m-5  bg-[#329850] p-4 rounded-full cursor-pointer hover:bg-[#0bee4f] font-bold"
                 >Say "Hello" to Whatsapp</button>
             </a>
 
@@ -43,7 +43,7 @@ const Service = () => (
                 <button
                     type="button"
                     onClick={() => { console.log("Connect Wallet") }}
-                    className="flex flex-row justify-center items-center m-5  bg-[#833AB4] p-4 rounded-full cursor-pointer hover:bg-[#833AB4]"
+                    className="flex flex-row justify-center items-center m-5  bg-[#8b4659] p-4 rounded-full cursor-pointer hover:bg-[#c03c47] font-bold"
                 >Visit Instagram Page</button>
             </a>
             <br />
@@ -53,24 +53,13 @@ const Service = () => (
 
         <div className="flex-1 flex flex-col justify-start items-center">
             <div className="slideshow-container">
-
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src={Slider1} width={650} height={450} />
-                    <div className="text">Happy Birthday</div>
-                </div>
-
-                <div className="mySlides fade">
-                    <div className="numbertext">2 / 3</div>
-                    <img src={Slider2} width={650} height={450} />
-                    <div className="text">Happy Anniversary</div>
-                </div>
-
-                <div className="mySlides fade">
-                    <div className="numbertext">3 / 3</div>
-                    <img src={Slider3} width={650} height={450} />
-                    <div className="text">Baby Shower</div>
-                </div>
+                {[Slider1, Slider2, Slider3].map((item, index) => (
+                    <div className="mySlides fade">
+                        <div className="numbertext">1 / 3</div>
+                        <img className="rounded-3xl" src={item} width={600} height={450} alt = {index} />
+                        {/* <div className="text">Happy Birthday</div> */}
+                    </div>
+                ))}
 
             </div>
         </div>

@@ -11,7 +11,8 @@ const Footer = () => {
                 </div>
                 <br />
             </div>
-            <p className="text-white">Want something else? Ping us</p>
+            <p className="text-white justify-center">Looking for something else.? 
+            <a className="font-bold" href={"https://wa.me/918452922869?text=Hey I want _____ product"}> Whatsapp us. </a></p>
 
             <div className="flex justify-center items-center flex-col mt-5">
                 <p className="text-white text-sm text-center">Order from us and get the huge discount & free gift</p>
